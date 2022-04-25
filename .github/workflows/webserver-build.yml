@@ -27,7 +27,6 @@ jobs:
       
     - name: 'Submit to cloud build'
       run: |
-        cd docker-samples/simple-webserver
         gcloud builds submit --tag us.gcr.io/cs-5346-assignment3/simple-webserver
 
     - name: 'Deploy to Cloud Run'
